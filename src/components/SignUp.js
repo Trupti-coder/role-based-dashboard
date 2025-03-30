@@ -38,6 +38,12 @@ function SignUp(){
    onChange={(e) => setEmail(e.target.value)} 
    required />
 
+<input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+<select value={role} onChange={(e) => setRole(e.target.value)} required>
+
+
+
+
 
 
         </form>
