@@ -11,6 +11,20 @@ function Login(){
     const validUser = storedUsers.find(user => user.userName === name && user.userPassword === password);
 
 
+    if (validUser) {
+      alert(`Login successful! Welcome ${validUser.userRole}`);
+      if (validUser.userRole === 'user') {
+        window.location.href = '/user';
+      } else if (validUser.userRole === 'admin') {
+        window.location.href = '/admin';
+      }
+    } else {
+      setError('Invalid username or password');
+    }
+  };
+
+
+
 
 
   }
