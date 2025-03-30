@@ -1,4 +1,6 @@
 function UserDashboard(){
+    const [products, setProducts] = useState([]);
+
     return(
         <>
 

@@ -12,6 +12,11 @@ function SignUp(){
     return(
 
         <>
+        <form  onSubmit={handleSubmit}>
+
+          
+
+        </form>
 
         </>
     )
