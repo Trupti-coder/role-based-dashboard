@@ -6,19 +6,19 @@ function Login(){
 
     return(
         <>
-        <div>
+    
+       
+        <form onSubmit={handleSubmit}>
 
-        <h1>Product List</h1>
-      <ul>
-        {products.map(product => (
-          <li key={product.id}>{product.title} - ${product.price}</li>
-        ))}
-      </ul>
+      <h2>Login</h2>
+      
+      <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} required />
+      <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+      <button type="submit">Login</button>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+    </form>
 
 
-
-
-        </div>
         
         </>
     );
