@@ -14,7 +14,20 @@ function SignUp(){
         <>
         <form  onSubmit={handleSubmit}>
 
-          
+        <h2>Sign Up</h2>
+      <input type="text"
+       placeholder="Name"
+        value={name} 
+        onChange={(e) => setName(e.target.value)} 
+        required />
+
+
+      <input type="text"
+       placeholder="City"
+        value={city} onChange={(e) => setCity(e.target.value)} 
+        required />
+
+
 
         </form>
 
