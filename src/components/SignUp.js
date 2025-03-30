@@ -22,10 +22,21 @@ function SignUp(){
         required />
 
 
-      <input type="text"
-       placeholder="City"
-        value={city} onChange={(e) => setCity(e.target.value)} 
-        required />
+  <input type="text"
+   placeholder="City"
+    value={city} onChange={(e) => setCity(e.target.value)} 
+     required />
+
+<input type="date"
+ value={dob}
+  onChange={(e) => setDob(e.target.value)} 
+  required 
+  />
+<input type="email"
+ placeholder="Email"
+  value={email}
+   onChange={(e) => setEmail(e.target.value)} 
+   required />
 
 
 
