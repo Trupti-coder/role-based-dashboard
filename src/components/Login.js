@@ -5,10 +5,14 @@ function Login(){
   const [error, setError] = useState('');
 
   const handleSubmit = (event) =>{
+    event.preventDefault();
+    const storedUsers = JSON.parse(localStorage.getItem('myuser')) || [];
+
+    const validUser = storedUsers.find(user => user.userName === name && user.userPassword === password);
 
 
 
-    
+
   }
 
     return(
