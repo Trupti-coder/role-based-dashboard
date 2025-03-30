@@ -41,6 +41,11 @@ function SignUp(){
 <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
 <select value={role} onChange={(e) => setRole(e.target.value)} required>
 
+<option value="">Select Role</option>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+
 
 
 
