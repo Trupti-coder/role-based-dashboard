@@ -22,8 +22,9 @@ function AdminDashboard(){
 
 
             id:products.length+1,
-            
-        }
+            title:`New Product ${products.length + 1}`,
+            price:(Math.random() * 100).toFixed(2)
+        };
     }
 
 
