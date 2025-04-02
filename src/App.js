@@ -6,10 +6,10 @@ function App() {
     <>
 
 <Routes>
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/user" element={<UserDashboard />} />
-        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/signup"  />
+        <Route path="/login"  />
+        <Route path="/user"  />
+        <Route path="/admin"  />
 
 </Routes>
 
