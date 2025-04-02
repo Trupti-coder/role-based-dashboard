@@ -25,7 +25,9 @@ function AdminDashboard(){
             title:`New Product ${products.length + 1}`,
             price:(Math.random() * 100).toFixed(2)
         };
-    }
+
+        setProducts([...products,newProduct]);
+    };
 
 
 
@@ -38,7 +40,16 @@ function AdminDashboard(){
             <h1>Admin Panel - Manage products</h1>
             <button onClick={addProduct}>Add Product</button>
 
+
             <ul>
+
+                {products.map(product=>(
+                    
+                    <li key={product.id}>{product.title} - ${product.price} 
+                    <button onClick={() => deleteProduct(product.id)}>Delete</button>
+
+                    </li>
+                ))}
 
               
             </ul>
